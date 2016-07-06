@@ -80,10 +80,10 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 ![25](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/25.png)
 
 ### Prepare for client side development
-26. Enter Nuget package manager to add framework to help with client side Development
+26. Open Nuget package manager to add frameworks to help with client side Development
 ![26](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/26.png)
 
-27. Use Browse to search for, then select and install AngularJS.Core package
+27. Use Browse to search for, then select and install AngularJS.Core package (or another client side framework package that you would like to use)
 ![27](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/27.png)
 
 ### Create client side to display employee data from the database
@@ -112,7 +112,6 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 ![35](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/35.png)
 
 36. Run the app again and use browser developer tools (F12) to notice a circular reference serialization error on the server side
-![36](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/36.png)
 
 37. To resolve the issue caused by employee data linked to department that is linked back to employee data go to Entity Framework data model and select False for its Lazy Loading Enabled property
 ![37](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/37.png)

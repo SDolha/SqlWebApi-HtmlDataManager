@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="MyOrganizationApp" ng-controller="EmployeesCtrl">
+<head>
+    <title>My organization - Employees</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/app.js"></script>
+</head>
+<body>
+    <h1>My organization - Employees</h1>
+    <ul>
+        <li ng-repeat="employee in employees">
+            <h2>{{ employee.FirstName }} {{ employee.LastName }}</h2>
+            <p>{{ employee.DepartmentName }}</p>
+        </li>
+    </ul>
+    <hr/>
+    <h1>New employee</h1>
+    <div>
+        <label>First name:</label>
+        <input type="text" name="FirstName" ng-model="newEmployee.FirstName"/>
+    </div>
+    <div>
+        <label>Last name:</label>
+        <input type="text" name="LastName" ng-model="newEmployee.LastName" />
+    </div>
+    <button ng-click="addNewEmployee()">Add</button>
+</body>
+</html>

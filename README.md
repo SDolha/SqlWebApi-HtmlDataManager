@@ -65,7 +65,7 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 20. View the data model and relations between entities
 ![20](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/20.png)
 
-### Create WebApi controllers using the existing data model classes to expose data retreival and update actions for your data entities (and eventually database) on HTTP as /api/* URLs
+### Create WebApi controllers using the existing data model classes to expose get and update actions for your data entities (and eventually database) on HTTP as /api/* URLs
 21. Build the Visual Studio project to ensure data model is compiled
 22. Initiate adding of a new controller in Controllers folder from Server Explorer
 ![22](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/22.png)

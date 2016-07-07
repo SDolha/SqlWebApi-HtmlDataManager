@@ -43,7 +43,7 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 13. Enter some test data for Employees table, using DepartmentId values from actually created department rows; DepartmentId is nullable indicating that department relationship is optional for employees
 ![13](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/13.png)
 
-### Create data model for the organization database
+### Create data model for the organization database (mapping database tables to middle code data entity objects)
 14. Add new ADO .NET Entity Data Model in Models folder from Solution Explorer
 ![14](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/14.png)
 
@@ -65,7 +65,7 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 20. View the data model and relations between entities
 ![20](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/20.png)
 
-### Create WebApi controllers using the existing data model classes
+### Create WebApi controllers using the existing data model classes to expose data retreival and update actions for your data entities (and eventually database) on HTTP as /api/* URLs
 21. Build the Visual Studio project to ensure data model is compiled
 22. Initiate adding of a new controller in Controllers folder from Server Explorer
 ![22](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/22.png)
@@ -86,7 +86,7 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 27. Use Browse to search for, then select and install AngularJS.Core package (or another client side framework package that you would like to use)
 ![27](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/27.png)
 
-### Create client side to display employee data from the database
+### Create client side app to display employee data from the database
 28. Initiate adding of a new HTML Page in the project folder from Server Explorer
 ![28](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/28.png)
 
@@ -119,7 +119,7 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 38. Run the app again and see base employee data is loaded successfully; note, though, that department data is not available (since related department data for employees hasn't been loaded anymore)
 ![38](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/38.png)
 
-39. To resolve the issue you may use a separate data transfer object (DTO) as model; initiate adding a new class in Model folder from Server Explorer
+39. To resolve the issue you may use a separate data transfer object (DTO) as model; initiate adding a new class in Models folder from Server Explorer
 ![39](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/39.png)
 
 40. Write very simple code to define EmployeeDto class and its properties, mapping to fields to be displayed on the client side, including DepartmentName
@@ -134,7 +134,7 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 43. Run the app again and see full employee data is loaded and displayed correctly, including department names; some employees may not have a department
 ![43](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/43.png)
 
-### Update client side to add new employee data to the database
+### Update client side app to be able to add new employee records to the database
 44. Update HTML code with input elements to support new employee field entering, and an Add button linked to a new addNewEmployee function to be defined in JavaScript code
 ![44](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/44.png)
 

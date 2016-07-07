@@ -3,32 +3,32 @@ Simple data manager application leveraging HTML on top of ASP .NET WebApi and SQ
 
 ## Development steps
 ### Get started
- 1. Initiate creation of a new Visual Studio project of type ASP .NET Web Application
+1. Initiate creation of a new Visual Studio project of type ASP .NET Web Application
 ![1](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/1.png)
 
- 2. Start with Empty template and Web API folders and core references
+2. Start with Empty template and Web API folders and core references
 ![2](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/2.png)
 
- 3. Open Solution Explorer in Visual Studio to see and manage the source code files
+3. Open Solution Explorer in Visual Studio to see and manage the source code files
 ![3](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/3.png)
 
 ### Create an organization database including employee and department data
- 4. Add new SQL Server Database in App_Data folder from Solution Explorer
+4. Add new SQL Server Database in App_Data folder from Solution Explorer
 ![4](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/4.png)
 
- 5. Set MyOrganization as the database name
+5. Set MyOrganization as the database name
 ![5](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/5.png)
 
- 6. Add a new table to the new database from Server Explorer
+6. Add a new table to the new database from Server Explorer
 ![6](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/6.png)
 
- 7. Set Departments table name in the T-SQL script, add columns, and set Id column (primary key) as identity column
+7. Set Departments table name in the T-SQL script, add columns, and set Id column (primary key) as identity column
 ![7](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/7.png)
 
- 8. Add another Employees table
+8. Add another Employees table
 ![8](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/8.png)
 
- 9. Initiate adding of a new foreign key to Employees table
+9. Initiate adding of a new foreign key to Employees table to create a relation between employees and departments
 ![9](https://raw.githubusercontent.com/SDolha/SqlWebApi-HtmlDataManger/master/Development-screenshots/9.png)
 
 10. Set Employees.DepartmentId column as foreign key to Departments.Id column
